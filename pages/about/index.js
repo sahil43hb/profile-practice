@@ -28,13 +28,13 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="html" />,
+          <FaCss3 key="css" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="next" />,
+          <SiFramer key="framer" />,
+          <FaWordpress key="wordpress" />,
         ],
       },
       {
@@ -130,7 +130,7 @@ const About = () => {
     initial='hidden'
     animate='show'
     exit='hidden'
-    className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">10 years ago, I began freelancing as adeveloper .Since then,I've done remote work for agencies,counsulted for startup, and collaborated an digital products for bussiness and consumer use .
+    className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">10 years ago, I began freelancing as adeveloper .Since then,I&apos;ve done remote work for agencies,counsulted for startup, and collaborated an digital products for bussiness and consumer use .
     </motion.p>
 
     {/* counter */}
@@ -218,7 +218,7 @@ const About = () => {
           <div className="flex gap-x-4">
           {
             item.icons?.map((icon,itemIndex)=>{
-              return <div className="text-2xl text-white">{icon}</div>;
+              return <div className="text-2xl text-white" key={icon.key}>{icon}</div>;
             })
           }
           </div>

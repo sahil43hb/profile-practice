@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 //component
 import ParticlesContainer from "../components/ParticlesContainer";
@@ -19,7 +19,7 @@ const Home = () => {
      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30
      to-black/10">
      <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left
-     h-full container mx-auto">
+     h-full container mx-auto sm:pt-7">
      {/* title */}
      <motion.h1 
      variants={fadeIn('down',0.2)}
@@ -37,7 +37,7 @@ const Home = () => {
        animate='show'
        exit='hidden'
        className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-       Lorem ipsum dolor placerat ex. Intet. Donec accumsan nulla et turpis. Nam vitae eleifend sapien, molestie cursus magna. Etiam aliquam tincidunt ipsum tinciduntcibus augue,i nunc.
+       Welcome to my portfolio! I'm a passionate and results-driven professional with a background in computer science and software development. With 8 years of experience in Full Stack and MERN Stack Development, I thrive on tackling complex challenges and transforming them into innovative solutions. Explore my work and journey to discover how I can contribute to your next project.
        </motion.p>
         {/* btn */}
         <div className="flex justify-center xl:hidden relative">
